@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+  margin: 30px 0;
+  width: 350px;
+}
+
+h2,h4,h3{
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+h3{
+  border-bottom: 1px solid #bbb;
+  margin: 40px 0px 10px;
+  padding-bottom: 10px;
+}
+.in-exp-container{
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12),  0 2px 8px rgba(0,0,0,0.24);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.in-exp-container > div{
+  flex: 1;
+  text-align: center;
+}
+.in-exp-container > div:first-of-type{
+  border-right: 1px solid #bbb;
+}
+.money{
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0px;
+}
+.money.plus{
+  color: rgb(31, 226, 31);
+}
+.money.minus{
+  color: rgb(245, 100, 100);
+}
+.list{
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.list li{
+  background-color: #fff;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+   color: #333;
+   display: flex;
+   justify-content: space-between;
+   padding: 15px ;
+   margin: 10px 0;
+   position: relative;
+
+}
+.list li.plus{
+  border-right: 5px solid rgb(31, 226, 31);
+}
+.list li.minus{
+  border-right: 5px solid rgb(245, 100, 100);
+}
+.delete-btn{
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  padding:4px 8px ;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+}
+
+.list li:hover .delete-btn{
+  opacity: 1;
+}
+
+
+
+label{
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+input[type='text'],
+input[type='number']{
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  outline: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3),  0 2px 6px rgba(0,0,0,0.20);
+}
+.btn{
+  cursor: pointer;
+  background-color: tomato;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 13px;
+    margin: 20px 0 30px;
+    border: 0;
+}
+
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
